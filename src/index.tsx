@@ -1,16 +1,15 @@
 import * as React from "react";
 import { render } from "react-dom";
-
+import CssBaseline from "@material-ui/core/CssBaseline";
 import AdminDashboardGrid from "./components/AdminDashboardGrid";
 import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
+      <CssBaseline />
       <AdminDashboardGrid />
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    </React.Fragment>
   );
 }
 
